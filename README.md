@@ -2,7 +2,7 @@
 Minecraft server using Docker-compose with a scripts useful for maintainance
 
 ## How-to-use
-Simply use `docker-compose up -d --build`
+Change port in `.env` (the default is 25565). Then simply use `docker-compose up -d --build`
 
 If you want to backup the server, use `./backup.sh`. This will:
 - Stop the server
