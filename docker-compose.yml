@@ -1,0 +1,14 @@
+version: '3'
+services:
+  minecraft:
+    build: docker/
+    ports:
+      - "$PORT:25565"
+    volumes:
+      - "${PWD}/data:/root/minecraft"
+    environment:
+      - MIN_MEMORY=1G
+      - MAX_MEMORY=1G
+    restart: unless-stopped
+    stdin_open: true
+    tty: true
